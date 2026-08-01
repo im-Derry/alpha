@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div id="circle">
+        <div id="countdown"> 5 </div>
+        <a href = "message.html">
+        <button id="nextBtn"> Next </button>
+        </a>
+    </div>
+
+    <script>
+
+
+        let count = 5;
+
+const countdown = document.getElementById("countdown");
+const button = document.getElementById("nextBtn");
+
+countdown.textContent = count;
+
+const timer = setInterval(() => {
+
+    count--;
+
+    countdown.textContent = count;
+
+    if (count === 0) {
+
+        clearInterval(timer);
+
+        countdown.style.display = "none";
+        button.style.display = "block";
+        console.log(button);
+        button.classList.add("show");
+
+    }
+
+}, 1000);
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

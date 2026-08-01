@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="last.css">
+</head>
+<body>
+    
+    <div id="talk">
+        <h1>There are some messages for you...</h1>
+    </div>
+
+    <main>
+        <div class="message-container">
+
+    <div class="message-box">
+        <p>Thank you for being my friend after all such things. I may not be your good friend, but I'll always try my best to never become a problem in your life.</p>
+    </div>
+
+    <div class="message-box">
+        <p>You are and will always be more than a friend to me.</p>
+    </div>
+
+    <div class="message-box">
+        <p>For me, you are like a home where I can always feel safe.</p>
+    </div>
+
+    <div class="message-box">
+        <p>Whenever we talk, our conversations make my day and always make me smile. 😊</p>
+    </div>
+
+    <div class="message-box">
+        <p>I've already used every word I know to describe this friendship. I don't think there are any words left that could truly express what it means to me.</p>
+    </div>
+
+    <div class="message-box">
+        <p>I hope our friendship lasts a lifetime.</p>
+    </div>
+
+    <div class="message-box">
+        <p>Lastly, I just want to say that you're the bestest friend I've ever had. ❤️</p>
+    </div>
+
+</div>
+
+</main>  
+
+<script>
+const boxes = document.querySelectorAll(".message-box");
+
+boxes.forEach((box, index) => {
+    setTimeout(() => {
+        box.classList.add("show");
+    }, (index + 1) * 2000); // 2 seconds between each box
+});
+</script>
+
+</body>
+</html>
